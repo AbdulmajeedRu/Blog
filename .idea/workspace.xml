@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fe252bd-8522-421d-8078-b02d03de5ceb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="0fe252bd-8522-421d-8078-b02d03de5ceb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619220963645</updated>
       <workItem from="1619220965017" duration="3205000" />
-      <workItem from="1619228556593" duration="6398000" />
+      <workItem from="1619228556593" duration="6700000" />
     </task>
     <servers />
   </component>
@@ -206,6 +201,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="1536" y="436" key="Vcs.Push.Dialog.v2" timestamp="1619241492378">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1536" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1619241492378" />
     <state x="1498" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1619238854911">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
