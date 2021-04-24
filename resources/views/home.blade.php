@@ -16,10 +16,14 @@
                 Dashboard
             </header>
 
+
             <div class="w-full p-6">
                 <p class="text-gray-700">
                     You are logged in!
                 </p>
+
+                    {{ __('You are logged in قلبوو!') }}
+                </div>
             </div>
         </section>
     </div>
