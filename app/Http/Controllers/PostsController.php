@@ -45,7 +45,6 @@ class PostsController extends Controller
         $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
         $request->image->move(public_path('images'), $newImageName);
         $slug = SlugService::createSlug(Post::class, 'slug', $request->title);
-<<<<<<< HEAD
 
         Post::create([
             'title'=> $request->input('title'),
@@ -56,9 +55,7 @@ class PostsController extends Controller
             'user_id' => auth() -> user() -> id
 
         ]);
-=======
         dd($slug);
->>>>>>> eb520a8e8ef66a837707c172e7d3c2f02bd31055
     }
 
     /**
