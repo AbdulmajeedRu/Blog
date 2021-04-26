@@ -17,11 +17,13 @@
                         Blog
                     </a>
                 </li>
+
                 <li class="pb-1">
                     <a href="/login">
                         Login
                     </a>
                 </li>
+
                 <li class="pb-1">
                     <a href="/register">
                         Regitser
@@ -46,11 +48,13 @@
                         Address
                     </a>
                 </li>
+
                 <li class="pb-1">
                     <a href="/">
                         Phone
                     </a>
                 </li>
+
                 <li class="pb-1">
                     <a href="/">
                         Contact
@@ -80,6 +84,7 @@
                         Computer Scince is the best
                     </a>
                 </li>
+
                 <li class="pb-1">
                     <a href="/">
                         PHP is awosome
@@ -95,3 +100,4 @@
     </p>
 
 </footer>
+
