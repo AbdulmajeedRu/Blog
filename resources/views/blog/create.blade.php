@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="w-4/5 m-auto pt-20">
-  <form action="/blog" method="POST" enctype="multipart/form-data">
+  <form action="/blog"  method="POST" enctype="multipart/form-data">
       @csrf
       <input
           type="text"
