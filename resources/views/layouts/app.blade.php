@@ -35,6 +35,7 @@
                 @else
                     <span>{{ Auth::user()->name }}</span>
 
+
                     <a href="{{ route('logout') }}"
                        class="no-underline hover:underline"
                        onclick="event.preventDefault();
@@ -48,7 +49,13 @@
     </header>
 
     <div>
+
         @yield('content')
+       </div>
+       <div>
+       @include('layouts.footer')
+    
+       </div>
     </div>
     <div>
         @include('layouts.footer')
