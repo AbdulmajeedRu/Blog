@@ -30,7 +30,7 @@
         <div class="m-auto sm:m-auto text-left w-4/5 block">
 
             <h2 class="text-4xl font-extabold text-gray-600">
-                Struggling to be a batter web developer
+                Struggling to be a better web developer
             </h2>
             <p class="py-8 text-gray-500 text-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.

@@ -8,6 +8,20 @@
             </h1>
         </div>
     </div>
+
+    @if (session()->has('message'))
+        <div class="w-4/5 m-auto mt-10 pl-2">
+            <p class="w-1/6 mb-4 text-gray-50 bg-green-500 rounded-2xl py-4 font-bold px-5 ">
+                {{ session()-> get('message') }}
+            </p>
+            
+
+
+        </div>
+        
+    @endif
+        
+
 @if (Auth::check())
         <div class="pt-15 w-4/5 m-auto">
 
@@ -22,7 +36,7 @@
 @foreach($posts as $post)
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-gray-200">
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336377_960_720.jpg" width="700" alt="">
+            <img src="{{ asset('images/' . $post->image_path) }}" width="700" alt="">
         </div>
 
         <div>
@@ -31,14 +45,41 @@
             </h2>
             <span class="text-gray-500">
                 By <span class="font-bold italic text-gray-800">    {{$post->user->name}}
-    Created on {{date('jS M Y', strtotime($post->updated_at) )}}</span>
+    , Created on {{date('jS M Y', strtotime($post->updated_at) )}}</span>
 
             </span>
-            <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-                {{$post->descriptipn}}
+            <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 ">
+                {{$post->description}}
             </p>
             <a href="/blog/{{$post->slug}}" class="uppercase bg-blue-500 text-gray-100
              text-lg font-extrabold py-4 px-8 rounded-3xl"> Keep Reading</a>
+
+             @if (isset(Auth::user() -> id) && Auth::user() -> id == $post ->user_id)
+                <span class="float-right">
+                    <a href="/blog/{{ $post->slug }}/edit"
+                        class="text-gray-700 italic hover:text-gray-900 pb-1 border-b-2">
+                    Edit
+                    </a>
+
+                </span>
+
+                <span class="float-right">
+                    <form 
+                    action="/blog/{{ $post->slug }}"
+                    method="POST">
+                    @csrf
+                    @method('delete')
+
+                    <button 
+                        class="text-red-500 pr-3"
+                        type="submit">
+                        Delete
+                    </button>
+                    </form>
+
+                </span>
+                 
+             @endif
         </div>
     </div>
 @endforeach
