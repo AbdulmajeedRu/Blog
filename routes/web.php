@@ -17,8 +17,10 @@ use App\Http\Controllers\PostsController;
 */
 Route::get('/', [\App\Http\Controllers\PagesController::class, 'index']);
 Auth::routes();
-Route::resource('/blog', \App\Http\Controllers\PostsController::class);
+Route::resource('/blog', PostsController::class);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('create', [App\Http\Controllers\PostsController::class, 'store'])->name('store');
+
 
 //Auth::routes();
 //

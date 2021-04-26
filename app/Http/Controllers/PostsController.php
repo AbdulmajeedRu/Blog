@@ -42,9 +42,10 @@ class PostsController extends Controller
             'description' => 'required',
             'image' => 'required|mimes:jpg,png,jpeg|max:5024'
         ]);
-        $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extention();
+        $newImageName = uniqid() . '-' . $request->title . '.' . $request->image->extension();
         $request->image->move(public_path('images'), $newImageName);
         $slug = SlugService::createSlug(Post::class, 'slug', $request->title);
+        dd($slug);
     }
 
     /**
