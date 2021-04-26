@@ -16,12 +16,14 @@
                     <a href="/blog ">
                         Blog
                     </a>
-                </li>                
+                </li>
+
                 <li class="pb-1">
                     <a href="/login">
                         Login
                     </a>
-                </li>                
+                </li>
+
                 <li class="pb-1">
                     <a href="/register">
                         Regitser
@@ -45,12 +47,14 @@
                     <a href="/ ">
                         Address
                     </a>
-                </li>                
+                </li>
+
                 <li class="pb-1">
                     <a href="/">
                         Phone
                     </a>
-                </li>                
+                </li>
+
                 <li class="pb-1">
                     <a href="/">
                         Contact
@@ -74,12 +78,13 @@
                     <a href="/ ">
                         Why we love laravel
                     </a>
-                </li>                
+                </li>
                 <li class="pb-1">
                     <a href="/">
-                        Computer Scince is the best 
+                        Computer Scince is the best
                     </a>
-                </li>                
+                </li>
+
                 <li class="pb-1">
                     <a href="/">
                         PHP is awosome
@@ -91,7 +96,8 @@
     </div>
     <p class="w-25 w2/4 pb-3 m-auto text-xs text-gray-100 pt-6 ">
         Copyrights Thamer, Ibrahim, Abdulmajeed 2021. All Rights Reserved
-    
+
     </p>
 
 </footer>
+

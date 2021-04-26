@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="background-image grid grid-cols-1 m-auto">
+    <div class="background-image grid grid-cols-1 m-auto" style="    background-image: url('https://cdn.pixabay.com/photo/2017/07/31/23/45/pen-2562078_960_720.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;">
+
         <div class="flex text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class="sm:text-white text-5xl uppercase font-bold text-shadow-md pb-14">
@@ -12,24 +18,27 @@
                     class="text-center bg-gray-50 text-gray-700 py-2 px-4 font-bold text-xl uppercase">
                     Read More
                 </a>
-            
+
             </div>
         </div>
     </div>
-    <div class="sm-grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+
         <div>
             <img src="https://cdn.pixabay.com/photo/2014/05/02/21/50/home-office-336377_960_720.jpg" width="700" alt="">
         </div>
         <div class="m-auto sm:m-auto text-left w-4/5 block">
-            <h2 class="text-3xl font-extabold text-gray-600">
-                Struggling to be a batter web developer 
-                </h2>
-            <p class="py-8 text-gray-500 text-l">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+
+            <h2 class="text-4xl font-extabold text-gray-600">
+                Struggling to be a batter web developer
+            </h2>
+            <p class="py-8 text-gray-500 text-xl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Beatae fugit inventore mollitia consectetur dolores? vero amet provident. Error.
             </p>
-            <p class="font-extarbold text-gray-600 text-l pb-9">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            <p class="font-extarbold text-gray-600 text-xl pb-9">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+
                 ipsum illum quos minus dicta eligendi in, fugit nam inventore assumenda.
 
             </p>
@@ -52,7 +61,8 @@
             Project Management
         </span>
         <span class="font-extrabold block text-4xl py-1">
-            Digital Strategy 
+            Digital Strategy
+
         </span>
         <span class="font-extrabold block text-4xl py-1">
             Backend Develpment
@@ -69,7 +79,8 @@
         </h2>
 
         <p class="m-auto w-4/5 text-gray-500">
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum dolores id. 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatum dolores id.
+
         </p>
 
     </div>
@@ -81,7 +92,9 @@
                     PHP
                 </span>
                 <h3 class="text-xl font-bold py-10">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias eius delectus, itaque nulla molestias? Enim voluptatem 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias eius delectus, itaque nulla
+                    molestias? Enim voluptatem
+
 
                 </h3>
                 <a class="uppercase bg-transparent border-2 border-gray-100 text-gray-100 text-xs font-extarbold pu-3 px-5 rounded-3xl">
@@ -95,3 +108,4 @@
         </div>
     </div>
 @endsection
+
